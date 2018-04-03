@@ -1,0 +1,12 @@
+= Vim Cheat Sheet
+
+== Regular Expressions
+
+=== Search and Replace
+
+The following example will search for patterns similar to `server/10.1` and replace them with `server/latest`, asking for confirmation before each replace.
+
+[source,vim]
+----
+%s/server\/\([0-9]\+\.[0-9]\+\)/server\/latest/gc
+----
